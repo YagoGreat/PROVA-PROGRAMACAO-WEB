@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Questão 1</title>  
+  </head>
+  <body>
+      <script>
+          var empresa = {
+              nome: "ABC Corp",
+              endereco: {
+                  rua: "Rua das Flores",
+                  numero: 123, 
+                  cidade: "Cidade Grande",
+                  estado: "Estado A" 
+              },
+              funcionarios: {
+                  total: 50,
+                  departamento: {
+                      nome: "RH",
+                      responsavel: "João Silva",
+                      numero: "123456789"
+                  }
+              }
+          }
+  
+          console.log(empresa.funcionarios.departamento.numero);
+      </script>
+  </body>
+  </html>

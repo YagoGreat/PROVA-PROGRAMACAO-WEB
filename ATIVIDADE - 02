@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+  </head>
+  <body>
+      <form id="meuForm">
+          <label for="nome">Nome:</label><br>
+          <input type="text" id="nome" name="nome"><br>
+          
+          <label for="email">Email:</label><br>
+          <input type="text" id="email" name="email"><br>
+          
+          <label for="telefone">Telefone:</label><br>
+          <input type="number" id="telefone" name="telefone"><br>
+          
+          <input type="button" value="Enviar" onclick="exibirValores()">
+      </form>
+      <script>
+          function exibirValores() {
+              var nome = document.getElementById("nome").value;
+              var email = document.getElementById("email").value;
+              var tel = document.getElementById("telefone").value;
+              console.log("Nome: " + nome);
+              console.log("Email: " + email);
+              console.log("Telefone: " + tel);
+          }
+      </script>
+  </body>
+  </html>
